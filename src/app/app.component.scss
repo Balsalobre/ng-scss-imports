@@ -1,0 +1,86 @@
+// @use 'styles' as styles; // Import global styles
+// @use 'variables' as vars; // Import global variables with name
+// color: vars.$black-font-color;
+// @use "variables" as *; // Import global variables
+
+// :host {
+//   .main-container {
+//     &__header {
+//       padding: 1rem;
+//       text-align: center;
+//     }
+
+//     &__title {
+//       color: $black-font-color;
+//       font-family: "Coda", system-ui;
+//       font-weight: 400;
+//       font-style: normal;
+//     }
+//   }
+// }
+
+@use "variables" as vars;
+
+:host {
+  display: block;
+  font-family: "Coda", sans-serif;
+
+  &.header {
+    padding: 2rem;
+    text-align: center;
+
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: vars.$black-font-color;
+    }
+
+    &__subtitle {
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+  }
+
+  &.content {
+    padding: 2rem;
+    text-align: center;
+
+    &__section {
+      margin: 1.5rem 0;
+
+      &__heading {
+        font-size: 2rem;
+        color: vars.$primary-color;
+        margin-bottom: 1rem;
+      }
+
+      &__list {
+        list-style: none;
+        padding: 0;
+
+        &__list-item {
+          font-size: 1.25rem;
+          margin: 0.5rem 0;
+          color: vars.$secondary-color;
+
+          strong {
+            color: vars.$primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: vars.$secondary-color;
+    color: #fff;
+
+    &__text {
+      margin: 0;
+    }
+  }
+}
