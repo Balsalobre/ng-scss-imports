@@ -180,28 +180,3 @@ This project is licensed under the MIT License.
 ---
 
 ✨ Happy Styling! ✨
-
-
-
-############################################################################################################
-
-### 🚀 Beneficios de `@use` y `@forward` en SCSS frente a `@import`
-
-**`@use` y `@forward`** son las nuevas formas recomendadas en SCSS para importar y compartir estilos, dejando atrás las limitaciones de `@import`. ¿Por qué son mejores?
-
-1️⃣ **Modularidad y control**:  
-   Con `@use`, todo lo importado necesita un alias, evitando conflictos de nombres y promoviendo un código más claro.  
-
-2️⃣ **Optimización**:  
-   Los archivos se procesan **solo una vez**, reduciendo redundancias y mejorando el rendimiento del compilador.  
-
-3️⃣ **Centralización**:  
-   `@forward` permite crear un punto único para reexportar estilos, haciéndolos accesibles de manera organizada.  
-
-4️⃣ **Escalabilidad**:  
-   Aseguran un diseño limpio, ideal para proyectos grandes. Además, son el estándar actual recomendado para SCSS.  
-
-**Tip**: Usa `_` en archivos parciales (`_variables.scss`) para evitar que se compilen directamente.
-
-¡Di adiós a los conflictos y el caos, y dale la bienvenida a un CSS más eficiente! 🚀  
-#SCSS #Frontend #DesarrolloWeb
